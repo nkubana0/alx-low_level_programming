@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - Entry point to my code
- * description - Prints aplhabet
- * returns 0
+ * main - Entry part of code
+ * description - prints alphabet
+ * return 0
  */
 int main(void)
 {
-	char c='a';
-	while(c<='z')
+	void print_alphabet(void);
 	{
+		char c;
+		for (c = 'a';c<= 'z'; c++)
 		_putchar(c);
+		_putchar("\n");
 	}
-	c++;
-	_putchar("\n")
 	return (0);
 }
