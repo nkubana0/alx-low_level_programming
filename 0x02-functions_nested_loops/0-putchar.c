@@ -1,12 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - main part of code
+ * main - Entry part to code
  * description - prints _putchar
  * return 0
  */
 int main(void)
 {
-	putchar('_putcha'r);
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
 	return 0;
 }
 
