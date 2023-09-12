@@ -1,14 +1,15 @@
 #include "main.h"
+
 /**
- * main - Entry part of code
- * description - prints alphabet
- * return 0
+ * print_alphabet - Make the alphabet
+ *
+ * Return:void
  */
-void print_alphabet(void);
+
+void print_alphabet(void)
 {
-	char ch;
-	for (ch ='a'; ch <='z'; ch++)
-	_putchar(ch);
-	_putchar("\n");
-	return (0);
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+_putchar(ch);
+_putchar('\n');
 }
