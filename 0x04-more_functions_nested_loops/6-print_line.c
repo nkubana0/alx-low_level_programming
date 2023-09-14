@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - prints a line
- * use _putchar
- * 
+ * print_line - display a line
+ * @number: the argument of the how many _ character
+ *     for line
  */
 
 void print_line(int number)
