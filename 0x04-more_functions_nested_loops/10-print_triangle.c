@@ -3,7 +3,7 @@
 /**
  * print_triangle -display a  shape triange
  * @size: size of the shape
- * Return:0 
+ * Return:0 successfully like always
  */
 
 void print_triangle(int size)
