@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print line - draws straight line in the terminal
+ * print_line - prints a line
  * use _putchar
- * return : 0 always
-*/
+ * 
+ */
 
 void print_line(int number)
 {
