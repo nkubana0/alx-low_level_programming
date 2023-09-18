@@ -2,8 +2,8 @@
 
 /**
  * swap_int - swap 2 numbers
- * num1: first parameter
- * num2: second parameter
+ * @num1: first parameter
+ * @num2: second parameter
  * Return: result
  */
 
