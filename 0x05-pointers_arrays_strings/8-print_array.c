@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_array - dipslay n item of array integer
- * @arr: array 
+ * @arr: array
  * @n : number of elements
  * Return:void
  */
