@@ -1,29 +1,27 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 
 /**
- * _strpbrk - funtion searches for string
- * @s: string
- * @accept: character
- *
- * return: 0 :) Success
- */
+* _strpbrk - fxn name
+* @s: param 1
+* @accept: param 2
+* Return: val
+*/
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *start = accept;
+	int i;
 
 	while (*s)
 	{
-		while (*accept)
+		for (i = 0; accept[i]; i++)
 		{
-			if (*accept == *s)
+			if (*s == accept[i])
+			{
 				return (s);
-			accept++;
+			}
 		}
-
-		accept = start;
 		s++;
 	}
-	return (NULL);
+	return ('\0');
 }

@@ -1,31 +1,32 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 
 /**
- * _strstr - locates substring
- * @haystack: string
- * @needle: input that locates string
- *
- * Return: 0 Success
- */
+* _strstr - fxn name
+* @haystack: param 1
+* @needle: param 2
+* Return: value
+*/
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *startn = needle, *starth = haystack;
-
-	while (*haystack)
+	while (*haystack != '\0')
 	{
-		starth = haystack;
-		needle = startn;
-		while (*haystack == *needle)
+		char *p1 = haystack;
+		char *p2 = needle;
+
+		while (*p1 == *p2 && *p2 != '\0')
 		{
-			haystack++;
-			needle++;
+			p1++;
+			p2++;
 		}
 
-		if (*needle == '\0')
+		if (*p2 == '\0')
+		{
 			return (haystack);
-		haystack = starth + 1;
+		}
+		haystack++;
 	}
+
 	return (NULL);
 }
